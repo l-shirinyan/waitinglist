@@ -1,0 +1,68 @@
+@import url(//db.onlinewebfonts.com/c/0b51833ff62e4af8acb5fd3e2bf59e97?family=SF+Pro+Display);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.bottomSheet,
+.bottomSheetJoin {
+  div[data-rsbs-overlay="true"] {
+    box-shadow: 0px -8px 16px rgba(0, 0, 0, 0.06);
+    width: 375px;
+    margin: 0 auto;
+    background-color: white;
+  }
+}
+
+.bottomSheetJoin {
+  div[data-rsbs-backdrop="true"] {
+    background-color: #0000004a;
+    max-width: 375px;
+    margin: 0 auto;
+  }
+}
+
+.bottomSheet {
+  div[data-rsbs-backdrop="true"] {
+    background-color: rgba(240, 248, 255, 0);
+  }
+  div[data-rsbs-scroll="true"] {
+    max-width: 375px;
+    margin: 0 auto;
+  }
+}
+.joinPhoneInput .PhoneInputInput {
+  border: 1px solid #d7d6ff;
+  background: linear-gradient(to left, #f5f5ff 73%, #d7d6ff 50%);
+  border-radius: 40px;
+  width: 100%;
+  height: 56px;
+  outline: none;
+  padding-left: 50px;
+}
+
+.joinPhoneInput .PhoneInputCountry {
+  width: 112px;
+  position: absolute;
+  height: 100%;
+  padding-left: 16px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  padding-right: 10px;
+  @apply bg-light-purple;
+}
+.notSelect .PhoneInputCountry {
+  background-color: transparent;
+}
+.notSelect .PhoneInputInput {
+  @apply bg-perwinkle-purple;
+  background: linear-gradient(to left, #f5f5ff 73%, #f5f5ff 50%);
+}
+.joinPhoneInput .PhoneInputCountrySelectArrow {
+  display: none;
+}
